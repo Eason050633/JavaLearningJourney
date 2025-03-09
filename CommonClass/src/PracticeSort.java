@@ -1,9 +1,10 @@
 public class PracticeSort {
     public static void main(String[] args) {
-        char[] cha={'d','c','g','e','b','a','f'};
+        /*char[] cha={'d','c','g','e','b','a','f'};
         String str="dcgebaf";
         stringToCharSort(str);
-        findSortChar(cha, 'g');
+        findSortChar(cha, 'g');*/
+        System.out.println(recursiveMult(4,5));
     }
     public static void stringToCharSort(String str){
         char[]ch =str.toCharArray();
@@ -74,5 +75,13 @@ public class PracticeSort {
             System.out.print(str[i]);
         }
         System.out.println();
+    }
+    public static int recursiveMult(int a,int b){
+        if(a==0){
+            return 0;
+        }
+        else {
+            return b+recursiveMult(a-1,b);
+        }
     }
 }
